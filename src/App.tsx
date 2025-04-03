@@ -15,6 +15,7 @@ import Settings from "./pages/Settings";
 import History from "./pages/History";
 import Help from "./pages/Help";
 import NotFound from "./pages/NotFound";
+import ExpenseTracker from "./pages/ExpenseTracker";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/settings" element={<Settings />} />
             <Route path="/history" element={<History />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/expenses" element={<ExpenseTracker />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
